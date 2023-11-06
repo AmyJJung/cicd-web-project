@@ -30,7 +30,7 @@ public class TestWelcome {
     public void testWelcome() throws Exception {
 
         this.mockMvc.perform(
-                get("/"))
+                get("/hello"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(view().name("index"))
